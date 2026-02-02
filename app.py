@@ -165,7 +165,7 @@ if st.button("Predict Churn",type="primary"):
         go.Bar(name="Churn", x=["Probability"], y=[proba[1]])
     ])
     fig.update_layout(title="Prediction Probabilities", barmode="group", height=350)
-    st.plotly_chart(fig, width=True)
+    st.plotly_chart(fig, use_container_width=True)
 
     if prediction == 1:
         st.warning("**At Risk:** Offer retention incentives, upgrade to longer contract, provide better support")
