@@ -14,7 +14,23 @@ A Machine Learning powered web application that predicts telecom customer churn 
 
 ---
 
-## 📖 Overview  
+## 📌 Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#business-problem">Business Problem</a>
+- <a href="#dataset">Dataset</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
+- <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
+- <a href="#model_training">Model Training</a>
+- <a href="#dashboard">Dashboard</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#final-recommendations">Final Recommendations</a>
+- <a href="#author--contact">Author & Contact</a>
+
+---
+
+<h2><a class="anchor" id="overview"></a>Overview</h2>
 
 Customer churn is a major challenge in the telecom industry. This project builds a Machine Learning model to predict whether a customer will churn based on service usage, billing details, and contract information.
 
@@ -29,7 +45,7 @@ The system includes:
 
 ---
 
-## 🎯 Problem Statement  
+<h2><a class="anchor" id="business-problem"></a>Problem Statement</h2>
 
 Telecom companies face revenue loss due to customer churn.  
 
@@ -41,7 +57,7 @@ The objective of this project is to:
 
 ---
 
-## 📂 Dataset  
+<h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
 - Dataset: Telco Customer Churn Dataset  
 - Total Records: 7,043  
@@ -61,7 +77,7 @@ The objective of this project is to:
 
 ---
 
-## 🛠 Tools & Technologies  
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
 
 - Python  
 - Pandas  
@@ -74,27 +90,64 @@ The objective of this project is to:
 
 ---
 
-## ⚙️ Methods  
+---
 
-### 🔹 Data Preprocessing
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+
+```
+Customer-Churn-Prediction
+│
+├── data/
+│      └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── models/
+│      ├── churn_scaler.pkl
+│      ├── columns.pkl
+│      └── customer_churn_model.pkl
+├── notebooks/
+│      └── churn.ipynb
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+---
+<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
+
 - Missing value handling  
 - Encoding categorical variables  
 - Feature scaling (StandardScaler)  
-- SMOTE for class balancing  
-
-### 🔹 Model Training
-- Logistic Regression  
-- Train-test split  
-- Evaluation using Accuracy, Precision, Recall, F1 Score  
-
-### 🔹 Deployment
-- Model saved using Joblib  
-- Web application built with Streamlit  
-- Real-time predictions via UI  
+- SMOTE for class balancing
 
 ---
 
-## 📊 Model Performance  
+---
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Exploratory Data Analysis (EDA)</h2>
+
+### 🔹 Target Distribution
+- 73% Non-Churn
+- 27% Churn
+- Imbalance handled using SMOTE during training
+
+### 🔹 Key Insights
+
+- Customers with low tenure are more likely to churn.
+- Month-to-month contract users show highest churn rate.
+- Higher monthly charges increase churn probability.
+- Fiber optic internet users churn more frequently.
+- Long-term contract customers are more stable.
+
+### 🔹 Conclusion from EDA
+Tenure, contract type, and monthly charges are strong indicators of churn and were important features in model training.
+
+---
+
+<h2><a class="anchor" id="model_training"></a>Model Training</h2>
+
+- Logistic Regression  
+- Train-test split  
+- Evaluation using Accuracy, Precision, Recall, F1 Score
+
+### Model Performance  
 
 | Metric | Score |
 |--------|--------|
@@ -103,6 +156,11 @@ The objective of this project is to:
 | Balanced using | SMOTE |
 
 ---
+<h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
+
+- Model saved using Joblib  
+- Web application built with Streamlit  
+- Real-time predictions via UI
 
 ## 📸 Application Features  
 
@@ -119,7 +177,8 @@ The objective of this project is to:
 
 ---
 
-## ▶️ How to Run the Project  
+---
+<h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
 ### 1️⃣ Clone Repository
 
@@ -146,30 +205,11 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+---
 
 ---
 
-## 📁 Project Structure  
-
-```
-Customer-Churn-Prediction
-│
-├── data/
-│      └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── models/
-│      ├── churn_scaler.pkl
-│      ├── columns.pkl
-│      └── customer_churn_model.pkl
-├── notebooks/
-│      └── churn.ipynb
-├── app.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 📈 Key Insights  
+<h2><a class="anchor" id="final-recommendations"></a>Key Insights</h2>
 
 - Month-to-month contract customers are more likely to churn  
 - Higher monthly charges increase churn probability  
@@ -185,19 +225,9 @@ The Logistic Regression model achieves around **79% accuracy** with balanced per
 
 This solution helps telecom companies identify at-risk customers and take preventive retention strategies.
 
----
 
-## 🔮 Future Work  
 
-- Implement SVM / Random Forest  
-- Hyperparameter tuning  
-- Add SHAP for explainability  
-- Deploy on cloud (Streamlit Cloud)  
-- Improve UI/UX  
-
----
-
-## 👨‍💻 Author  
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
 
 **Jay Dhandhukiya**  
 
