@@ -61,7 +61,7 @@ with st.sidebar:
     st.header("Model Info")
     st.info("""
     **Logistic Regression**
-    - Accuracy: ~77%
+    - Accuracy: ~79%
     - Dataset: 7,043 customers
     - Features: 20 Attributes
     - Balanced with SMOTE
