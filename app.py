@@ -205,7 +205,7 @@ if st.session_state.page == "Predict":
 
 # Upload & Analyze Dataset
 elif st.session_state.page == "Upload":
-    st.markdown('<div class="main-title">Upload & Analyze Dataset</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-title">Upload Churn Dataset & Analyze</div>', unsafe_allow_html=True)
     st.markdown("---")
 
     uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
