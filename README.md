@@ -158,6 +158,8 @@ Tenure, contract type, and monthly charges are strong indicators of churn and we
 ---
 <h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
 
+Dashboard Link: https://churn-prediction14.streamlit.app
+
 - Model saved using Joblib  
 - Web application built with Streamlit  
 - Real-time predictions via UI
