@@ -194,7 +194,7 @@ This solution helps telecom companies identify at-risk customers and take preven
 
 ## 👨‍💻 Author  
 
-**Jay Ddd**  
+**Jay Dhandhukiya**  
 
 - GitHub: https://github.com/codewithsam14 
 - Email: jayddd838@gmail.com  
