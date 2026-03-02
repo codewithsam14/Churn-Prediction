@@ -155,9 +155,14 @@ streamlit run app.py
 Customer-Churn-Prediction
 │
 ├── data/
+│      └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 ├── models/
+│      ├── churn_scaler.pkl
+│      ├── columns.pkl
+│      └── customer_churn_model.pkl
+├── notebooks/
+│      └── churn.ipynb
 ├── app.py
-├── train_model.py
 ├── requirements.txt
 └── README.md
 ```
